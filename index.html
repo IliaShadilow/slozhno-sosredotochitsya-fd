@@ -4,22 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light"> <!-- определяем главную тему(основная, побочная) -->
     <title>Сложно сосредоточиться</title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/favicon.ico"> <!-- тип image/x-icon для icon  -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg"> <!-- тип image/svg+xml для svg  -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/mobile-icon.png"> <!--  rel для apple-touch-ico для png  -->
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/dark.css">
+    <link rel="stylesheet" href="./styles/light.css">
     <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header decorated-zone">
       <nav class="header__theme-menu">
+        <span class="header_decorative-rec" aria-hidden="true">rec</span> <!-- aria-hidden="true" чтобы скринридеры не видели и не читали этот элемент -->
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
               День
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
@@ -27,7 +37,7 @@
             </button>
           </li>
           <li class="header__theme-menu-item">
-            <button
+            <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
               Неон
@@ -35,6 +45,35 @@
           </li>
         </ul>
       </nav>
+        <h1 class="header__no-focus">
+          <span>no</span>
+          <span>focus</span>
+        </h1>
+      <div class="header__head-description">
+        <h2 class="header__head-description-text">
+          <span>Что делать, когда не можешь делать ничего</span>
+          <span>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</span>
+        </h2>
+      </div>
+
+        
+       
+      
     </header>
+    <section>
+      <p>section1</p>
+    </section>
+    <section>
+      <p>section2</p>
+    </section>
+    <section>
+      <p>section3</p>
+    </section>
+    <section>
+      <p>section4</p>
+    </section>
+    <footer>
+      <p>footer</p>
+    </footer>
   </body>
 </html>
