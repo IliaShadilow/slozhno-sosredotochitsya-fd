@@ -32,7 +32,7 @@
   display: grid;
   grid-template-columns: 2fr 1fr;
   /* grid-template-rows: 2fr 1fr; */
-  grid-column: 1 / 3;
+  /* grid-column: 1 / 3; */
   background: #daa208;
   block-size: 100vh;
   min-block-size: 668px;
@@ -46,7 +46,7 @@
 .header__theme-menu {
   grid-column: 2;
   justify-self: end;
-  align-self: start;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -74,7 +74,7 @@
 
 
 .header__decorative-rec {
-  display: var(--rec-display, block); /* управление видимостью */
+  display: var(--rec-display, inline-block); /* управление видимостью */
   position: absolute; /* позиционируем в углу */
    grid-column: 2;
   justify-self: end; /* прижать вправо */
@@ -94,14 +94,16 @@
   border-radius: 50%;
   background: #FF0070;
   box-shadow: 0 0 0 2px #ff4757;
-  top: 50%; /* центрируем вертикально */
-  left: 100%; /* справа от текста */
-  transform: translateY(-50%); /* компенсируем половину высоты */
+  /* Дополнительно рекомендуемые свойства */
+  top: 0;
+  left: 0;
 }
 
 /* no-focus */
 
 .header__no-focus {
+  
+  grid-column: 1 / 3;
   font-size: 116px;
   color: var(--color-no-focus, #DB00FF);
   text-shadow: 4px 4px 0 var(--text-shadow-no-focus, #FF0070);
@@ -110,6 +112,16 @@
 /* header__head-description */
 
 .header__head-description {
+  /* background: var(--bg-head-description,#FF0070);
+  color: var(--text-color-head-description, #000028); */
+  grid-column: 1 / 3;
+  /* grid-row: min-content; */
+}
+
+
+/* article-blocks */
+
+.headings-blocks  {
   background: var(--bg-head-description,#FF0070);
   color: var(--text-color-head-description, #000028);
 }

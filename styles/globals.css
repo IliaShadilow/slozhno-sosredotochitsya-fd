@@ -32,6 +32,10 @@ h6 {
   font-weight: var(--font-bold, bold);
 }
 
+h2 {
+  font-size: 18px;
+}
+
 ul {
   margin: 0;
   padding: 0;
