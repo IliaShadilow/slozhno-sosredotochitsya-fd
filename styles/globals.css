@@ -47,6 +47,10 @@ picture {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 button,
 a {
   color: currentColor;

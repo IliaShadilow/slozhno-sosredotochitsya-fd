@@ -3,6 +3,8 @@
   и их переопределение под различные устройства
 */
 
+/* TODO: сделай в комментариях какая переменная относится к какому блоку через комментарии */
+
 /* mobile first */
 
 :root {
@@ -13,14 +15,22 @@
   --margin: 10px;
   --justify-content: center;
   --align-items: center;
-  --rec-display: inline-block;
+  --rec-display: flex;
+  --left-rec: 82%;
+  --top-rec: 0.5%;
+  --left-decorative-corner: 93%;
+  --top-decorative-corner: 96.3%;
   --font-family: 'IBM Plex Mono';
   --font-regular: normal;
   --font-bold: bold;
   --color-no-focus: #DB00FF;
-  --text-shadow-no-focus: #FF0070;
+  --accent-color: #FF0070;
   --paddding-header-font-button-start-end: 1.5px;
   --paddding-header-font-button-left-right: 13px;
   --bg-head-description: #FF0070;
   --text-color-head-description: #000028;
+  --border-bottom-text-shadow: #F1B2CE;
+  --color-article-p: #F1B2CE;
+  --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения */
+  --border-bottom-theme-menu-item: #FF0070;
 }

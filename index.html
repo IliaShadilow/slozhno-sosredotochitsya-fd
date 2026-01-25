@@ -18,40 +18,39 @@
   </head>
   <body class="page">
     <header class="header decorated-zone">
+      <span class="header__decorative-rec" aria-hidden="true">rec</span> <!-- aria-hidden="true" чтобы скринридеры не видели и не читали этот элемент -->
       <nav class="header__theme-menu">
+        
         <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
+          <li class="header__theme-menu-item header__theme-menu-hover">
             <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_light"
             >
-              День
+              день
             </button>
           </li>
-          <li class="header__theme-menu-item">
+          <li class="header__theme-menu-item header__theme-menu-hover">
             <button type="button"
               class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
               disabled
             >
-              Авто
+              авто
             </button>
           </li>
           <li class="header__theme-menu-item">
             <button type="button"
               class="header__theme-menu-button header__theme-menu-button_type_dark"
             >
-              Неон
+              неон
             </button>
           </li>
         </ul>
       </nav>
-
-      <span class="header_decorative-rec" aria-hidden="true">rec</span> <!-- aria-hidden="true" чтобы скринридеры не видели и не читали этот элемент -->
-      
         <h1 class="header__no-focus">
           <span>no</span>
           <span>focus</span>
         </h1>
-      <div class="header__head-description headings-blocks">
+      <div class="header__head-description title-decor">
         <h2 class="header__head-description-text">
           <span>Что делать, когда не можешь делать ничего</span>
           <span>Или почему нам так сложно сконцентрироваться, особенно когда очень надо</span>
@@ -69,17 +68,17 @@
         Почему сосредоточиться так сложно
       </h2>
       <article class="no-concentration__multitasking article-block">
-      <h2 class="no-concentration__subtitle article-subtitle-title">
+      <h2 class="no-concentration__subtitle title-decor ">
         Многозадачность
       </h2>
       <p class="no-concentration__article article-text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? 
         А дело в том, что её просто не существует. 
-        Исследователи выяснили, что мозгу тяжело концентрироваться даже на двух делах одновременно. 
+        Исследователи <a class="text-shadow" href="https://dana.org/news-and-insights/">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. 
         А когда в поле внимания попадает несколько важных задач, организм паникует и выделяет кортизол и адреналин — «гормоны стресса».
          Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.</p>
       </article>
       <article class="no-concentration__dopamine article-block">
-      <h2 class="no-concentration__subtitle article-subtitle-title">
+      <h2 class="no-concentration__subtitle title-decor">
         Дофамин
       </h2>
       <p class="no-concentration__article article-text">Особенно сложно сосредоточиться, когда задач много и все они — важные. Где же легендарная многозадачность, когда она так нужна вам (и всем нанимающим менеджерам этого мира)? 
@@ -94,7 +93,7 @@
         Что снижает концентрацию внимания?
       </h2>
       <article class="little-concentration__concentration article-block">
-      <h2 class="little-concentration__subtitle article-subtitle-title">
+      <h2 class="little-concentration__subtitle title-decor">
         Концентрация
       </h2>
       <p class="little-concentration__article article-text">
@@ -106,7 +105,7 @@
       </p>
       </article>
       <article class="little-concentration__meal article-block">
-      <h2 class="little-concentration__subtitle article-subtitle-title">
+      <h2 class="little-concentration__subtitle title-decor">
         Еда
       </h2>
       <p class="little-concentration__article article-text">
@@ -117,7 +116,7 @@
       </p>
       </article>
       <article class="little-concentration__gadgets article-block">
-      <h2 class="little-concentration__subtitle article-subtitle-title">
+      <h2 class="little-concentration__subtitle title-decor">
         Гаджеты
       </h2>
       <p class="little-concentration__article article-text">
@@ -133,10 +132,10 @@
         Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх секунд)
       </h2>
       <article class="how-concentrate__five-tips article-block">
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-title title-decor">
         5 простых (на самом деле не очень) советов
       </h2>
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-subtitle-title article-title title-decor">
         Представьте небо и облака
       </h2>
       <p class="how-concentrate article-text">
@@ -148,7 +147,7 @@
       </p>
       </article>
       <article class="how-concentrate__music-off article-block">
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-subtitle-title title-decor">
         Включите музыку
       </h2>
       <p class="how-concentrate article-text">
@@ -159,18 +158,20 @@
       </p>
       </article>
       <article class="how-concentrate__walk article-block">
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-subtitle-title title-decor">
         Прогуляйтесь
       </h2>
       <p class="how-concentrate article-text">
         Или даже пробегитесь. 
-        Лучше найти парк или лес: один эксперимент показал, что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается.
+        Лучше найти парк или лес: один эксперимент 
+        <a class="text-shadow" href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328">показал</a>, 
+        что созерцание природы повышает концентрацию, в то время как после просмотра городских пейзажей она наоборот понижается.
         Можно совместить прогулку с физическими упражнениями или бегом — так в мозг поступит ещё больше кислорода и он будет лучше работать. 
         Но и простая двадцатиминутная прогулка — тоже отличный вариант.
       </p>
       </article>
       <article class="how-concentrate__eat-well article-block">
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-subtitle-title title-decor">
         Хорошо ешьте
       </h2>
       <p class="how-concentrate article-text">
@@ -180,7 +181,7 @@
       </p>
       </article>
       <article class="how-concentrate__read article-block">
-      <h2 class="how-concentrate__subtitle article-subtitle-title">
+      <h2 class="how-concentrate__subtitle article-subtitle-title title-decor">
         Читайте
       </h2>
       <p class="how-concentrate article-text">
