@@ -213,6 +213,68 @@
   font-weight: normal;
 }
 
+/* can-in-pictures */
+
+.can-in-pictures {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content;
+  gap: 10px;
+}
+
+.can-in-pictures__item {
+  inline-size: 100%;      /* Занимает всю ширину контейнера */
+  block-size: 100%;   /* Занимает всю высоту контейнера */
+  object-fit: cover; /* Аналогично background-size: cover */
+  object-position: center; /* Аналогично background-position: center */
+  display: block;   /* Убирает лишние пробелы под изображением */
+}
+
+.img-sunset {
+  inline-size: 355px;
+  block-size: 142px;
+}
+
+.img-ice-cream {
+  inline-size: 355px;
+  block-size: 355px;
+}
+
+.img-tape {
+  inline-size: 355px;
+  block-size: 327px;
+}
+
+.img-books {
+  inline-size: 355px;
+  block-size: 355px;
+}
+
+.img-street {
+  inline-size: 355px;
+  block-size: 327px;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-block-size: 668px;
+  block-size: 100vh;
+  padding-block-end: 11px;
+
+  background: #271b42;
+}
+
+.footer__title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--color-no-focus, #DB00FF);
+  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+}
+
+
 /* universal-blocks */
 
 .text-shadow {
@@ -240,7 +302,4 @@
   color: var(--text-color-head-description, #000028);
   margin-block-end: 10px;
 }
-
-
-
 
