@@ -10,12 +10,12 @@
 :root {
   --bg-cover-image: url("../images/cover-image-dark.png");
   --bg-cover-color: #000;
-  --padding-footer: 11px;
   --justify-content: center;
   --align-items: center;
   --rec-display: flex;
   --main-font: 'IBM Plex mono';
   --font-size: 18px;
+  --font-size-accent: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-regular: normal;
   --font-bold: bold;
   --color-no-focus: #DB00FF;
@@ -26,4 +26,7 @@
   --color-article-p: #F1B2CE;
   --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения */
   --border-bottom-theme-menu-item: #FF0070;
+  --mobile-widght: 375;
+  --tablet-widght: 768;
+  --desktop-widght: 1024;
 }
