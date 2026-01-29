@@ -12,9 +12,31 @@
   --bg-cover-image: url("../images/cover-image-light.png");
   --bg-cover-color: #fff;
   --rec-display: none;
+  --color-text: #353430;
+  --accent-color: #FF8DCB;
+  --color-no-focus: #FFC2E6;
+  --bg-head-description: #FF8DCB;
+  --color-article-p: #353430;
+  --for-focus: #353430;
+  --border-color-menu-button-rgba: 53, 52, 48, 0.4;
+  --border-bottom-text-shadow: #353430;
+  --text-shadow-focus: #353430;
+}
 
-  /* TODO: без понятия где это прописывается займись этим позже 
-  .header__decorative-rec {
-    display: var(--rec-display, none);
-  } */
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Дублируем только те же переменные, что и выше */
+  --bg-cover-image: url("../images/cover-image-light.png");
+  --bg-cover-color: #fff;
+  --rec-display: none;
+  --color-text: #353430;
+  --accent-color: #FF8DCB;
+  --color-no-focus: #FFC2E6;
+  --bg-head-description: #FF8DCB;
+  --color-article-p: #353430;
+  --for-focus: #353430;
+  --border-color-menu-button-rgba: 53, 52, 48, 0.4;
+  --border-bottom-text-shadow: #353430;
+  --text-shadow-focus: #353430;
+  }
 }

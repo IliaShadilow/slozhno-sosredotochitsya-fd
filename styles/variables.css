@@ -12,6 +12,7 @@
   --bg-cover-color: #000;
   --justify-content: center;
   --align-items: center;
+  --color-text: #FF0070;
   --rec-display: flex;
   --main-font: 'IBM Plex mono';
   --font-size: 18px;
@@ -26,4 +27,6 @@
   --color-article-p: #F1B2CE;
   --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения */
   --border-bottom-theme-menu-item: #FF0070;
+  --for-focus: #FF0070;
+  --text-shadow-focus: #F1B2CE;
 }
