@@ -9,24 +9,24 @@
 
 :root {
   --bg-cover-image: url("../images/cover-image-dark.png");
-  --bg-cover-color: #000;
+  --bg-cover-color: #000028;
   --justify-content: center;
   --align-items: center;
-  --color-text: #FF0070;
+  --color-text: #ff0070;
   --rec-display: flex;
-  --main-font: 'IBM Plex mono';
+  --main-font: "IBM Plex mono";
   --font-size: 18px;
   --font-size-accent: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-regular: normal;
   --font-bold: bold;
-  --color-no-focus: #DB00FF;
-  --accent-color: #FF0070;
-  --bg-head-description: #FF0070;
+  --color-no-focus: #db00ff;
+  --accent-color: #ff0070;
+  --bg-head-description: #ff0070;
   --text-color-head-description: #000028;
-  --border-bottom-text-shadow: #F1B2CE;
-  --color-article-p: #F1B2CE;
+  --border-bottom-text-shadow: #f1b2ce;
+  --color-article-p: #f1b2ce;
   --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения */
-  --border-bottom-theme-menu-item: #FF0070;
-  --for-focus: #FF0070;
-  --text-shadow-focus: #F1B2CE;
+  --border-bottom-theme-menu-item: #ff0070;
+  --for-focus: #ff0070;
+  --text-shadow-focus: #f1b2ce;
 }

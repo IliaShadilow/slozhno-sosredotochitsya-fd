@@ -7,26 +7,25 @@
   grid-template-columns: 1fr;
   margin-inline: auto;
   padding-inline: clamp(10px, 2.55vi + 0.46px, 20px);
-  padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);  
+  padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);
   padding-block-end: clamp(11px, 1.272vi + 6.229px, 16px);
-  color: var(--color-text, #FF0070);
-  font-family: var(--main-font, 'IBM Plex mono'), Arial, sans-serif; /* TODO: поменять на главный main */
+  color: var(--color-text, #ff0070);
+  font-family:
+    var(--main-font, "IBM Plex mono"), Arial, sans-serif; /* TODO: поменять на главный main */
   font-size: var(--font-size, 18px);
-  background: var(--bg-cover-image, url("../images/cover-image-dark.png")) center / cover no-repeat;
+  background: var(--bg-cover-image, url("../images/cover-image-dark.png"))
+    center / cover no-repeat;
   background-color: var(--bg-cover-color, #000);
   background-attachment: fixed; /* чтобы зафиксировать фон на месте при прокрутке */
   inline-size: 100%;
   block-size: 100%;
 
-
-  
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 /* header */
 
 .header {
-  position: relative;
   position: relative;
   display: grid;
   grid-auto-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr);
@@ -41,8 +40,8 @@
   top: 1.5%;
   left: 93%;
   display: block;
-  border-top: 1px solid var(--accent-color, #FF0070);
-  border-right: 1px solid var(--accent-color, #FF0070);
+  border-top: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--accent-color, #ff0070);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -52,8 +51,8 @@
   position: absolute;
   top: 94.8%;
   display: block;
-  border-bottom: 1px solid var(--accent-color, #FF0070);
-  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-left: 1px solid var(--accent-color, #ff0070);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -69,18 +68,16 @@
   text-transform: uppercase; /* TODO: перемолоть на переменные */
   inline-size: 57px;
   max-block-size: 26px;
-  
 }
 
 .header__decorative-rec::after {
   content: "";
   display: block;
-  margin-inline-start: 10px;
   margin-inline-start: 17%;
   margin-block-start: 13%;
   border-radius: 50%;
   box-shadow: 0 0 4px 2px rgba(255, 0, 112, 0.5);
-  background-color: #FF0070;
+  background-color: #ff0070;
   inline-size: 9px;
   block-size: 9px;
 }
@@ -114,7 +111,7 @@
 }
 
 .header__theme-menu-button::after {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0; /* Прижимаем к низу кнопки */
@@ -128,7 +125,7 @@
 }
 
 .header__theme-menu-button:focus-visible::after {
-  background-color: var(--for-focus, #FF0070);
+  background-color: var(--for-focus, #ff0070);
 }
 
 .header__theme-menu-hover {
@@ -142,12 +139,14 @@
 /* no-focus */
 
 .header__no-focus {
-  
   grid-column: 1 / 3;
-  color: var(--color-no-focus, #DB00FF);
-  font-size: var(--font-size-accent, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
+  color: var(--color-no-focus, #db00ff);
+  font-size: var(
+    --font-size-accent,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
   line-height: 0.9;
-  text-shadow: 4px 4px 0 var(--accent-color, #FF0070);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
 /* header__head-description */
@@ -170,11 +169,13 @@
   margin-block-end: calc(50 / 18 * 1em);
 }
 
-.section:nth-child(4) {  /* .page  */
+.section:nth-child(4) {
+  /* .page  */
   margin-block-end: calc(46 / 18 * 1em);
 }
 
-.section:nth-child(5) {  /* .page  */
+.section:nth-child(5) {
+  /* .page  */
   margin-block-end: calc(40 / 18 * 1em);
 }
 
@@ -195,7 +196,7 @@
 
 /* how-concentrate */
 
-.how-concentrate__five-tips .title-decor:first-child{
+.how-concentrate__five-tips .title-decor:first-child {
   margin-block-end: calc(20 / 18 * 1em);
 }
 
@@ -206,7 +207,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
   /* gap: 10px; */
-  
 }
 
 .can-in-pictures .can-in-pictures__item {
@@ -218,11 +218,11 @@
 }
 
 .can-in-pictures__item {
-  display: block;   /* Убирает лишние пробелы под изображением */
+  display: block; /* Убирает лишние пробелы под изображением */
   object-fit: cover; /* Аналогично background-size: cover */
   object-position: center; /* Аналогично background-position: center */
-  inline-size: 100%;      /* Занимает всю ширину контейнера */
-  block-size: 100%;   /* Занимает всю высоту контейнера */
+  inline-size: 100%; /* Занимает всю ширину контейнера */
+  block-size: 100%; /* Занимает всю высоту контейнера */
 }
 
 .img-sunset {
@@ -267,8 +267,8 @@
   top: 1.5%;
   left: 93%;
   display: block;
-  border-top: 1px solid var(--accent-color, #FF0070);
-  border-right: 1px solid var(--accent-color, #FF0070);
+  border-top: 1px solid var(--accent-color, #ff0070);
+  border-right: 1px solid var(--accent-color, #ff0070);
   inline-size: 25px;
   block-size: 25px;
 }
@@ -279,39 +279,40 @@
   top: 94.8%;
   right: 92.6%;
   display: block;
-  border-bottom: 1px solid var(--accent-color, #FF0070);
-  border-left: 1px solid var(--accent-color, #FF0070);
+  border-bottom: 1px solid var(--accent-color, #ff0070);
+  border-left: 1px solid var(--accent-color, #ff0070);
   inline-size: 25px;
   block-size: 25px;
 }
 
 .footer__title {
-  color: var(--color-no-focus, #DB00FF);
-  font-size: var(--font-size-accent, clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem));
-  text-shadow: 2px 2px 0 var(--accent-color, #FF0070);
+  color: var(--color-no-focus, #db00ff);
+  font-size: var(
+    --font-size-accent,
+    clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
+  );
+  text-shadow: 2px 2px 0 var(--accent-color, #ff0070);
 }
-
 
 /* universal-blocks */
 
 .text-shadow {
-  
   position: relative; /* Для корректной работы псевдоэлементов (если понадобится) */
   margin: 2px; /* Отступы от соседних элементов */
   padding: 4px; /* Резервируем место под рамку */
   /* Базовые стили */
-  text-shadow: 2px 1px 0 var(--accent-color, #FF0070);
+  text-shadow: 2px 1px 0 var(--accent-color, #ff0070);
 }
 
 /* Hover: только нижняя граница */
 .text-shadow:hover {
-  border-bottom: 1px solid var(--border-bottom-text-shadow, #F1B2CE);
+  border-bottom: 1px solid var(--border-bottom-text-shadow, #f1b2ce);
 }
 
 /* Фокус: полная рамка через box-shadow (не конфликтует с hover) */
 .text-shadow:focus,
 .text-shadow:focus-visible {
-  box-shadow: 0 0 0 2px var(--text-shadow-focus, #F1B2CE);
+  box-shadow: 0 0 0 2px var(--text-shadow-focus, #f1b2ce);
   outline: none; /* Убираем стандартную обводку браузера */
 }
 
@@ -325,7 +326,7 @@
 }
 
 .article-block p {
-  color: var(--color-article-p,#F1B2CE);
+  color: var(--color-article-p, #f1b2ce);
   line-height: 1.3;
 }
 
@@ -333,10 +334,10 @@
   margin-block-end: calc(19 / 18 * 1em);
 }
 
-.title-decor  {
+.title-decor {
   margin-block-end: calc(11 / 18 * 1em);
   color: var(--text-color-head-description, #000028);
-  background: var(--bg-head-description,#FF0070);
+  background: var(--bg-head-description, #ff0070);
 }
 
 .visually-hidden {
@@ -369,7 +370,7 @@
   .header::after {
     top: 95.7%;
   }
-  
+
   .header__decorative-rec {
     top: 2.1%;
     left: 91.7%;
@@ -381,15 +382,17 @@
 
   .header__no-focus {
     --font-size-accent: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-     width: calc(
-    100% + 
-    clamp(10px, 2.55vi + 0.46px, 20px) + 
-    clamp(10px, 2.55vi + 0.46px, 20px)
-  );  
-  margin-left: calc(-1 * clamp(10px, 2.55vi + 0.46px, 20px));
-  /* Чтобы не было горизонтального скролла */
-  overflow: hidden;
-  font-size: var(--font-size-accent, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+    width: calc(
+      100% + clamp(10px, 2.55vi + 0.46px, 20px) +
+        clamp(10px, 2.55vi + 0.46px, 20px)
+    );
+    margin-left: calc(-1 * clamp(10px, 2.55vi + 0.46px, 20px));
+    /* Чтобы не было горизонтального скролла */
+    overflow: hidden;
+    font-size: var(
+      --font-size-accent,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
   }
 
   .header__head-description {
@@ -414,16 +417,13 @@
     margin-block-end: calc(60 / 18 * 1em);
   }
 
-  .no-concentration__title {
-    grid-row: 1 / 3;
-  }
-
   .no-concentration .article-title {
     margin-block-end: initial;
   }
 
   .no-concentration__title {
     word-spacing: 19px;
+    grid-row: 1 / 3;
   }
 
   .little-concentration__title {
@@ -442,7 +442,6 @@
   .can-in-pictures {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(229px, 1fr));
-    grid-template-rows: min-content repeat(3, minmax(auto, 1fr));
     gap: 20px;
   }
 
@@ -452,12 +451,12 @@
 
   .can-in-pictures .can-in-pictures__item {
     margin-block-end: initial;
-}
+  }
 
   .img-sunset {
     grid-column: 1 / 3;
     aspect-ratio: 355 / 142; /* ≈ 2.5 / 1 */
-}
+  }
 
   .img-ice-cream {
     grid-row: span 2;
@@ -498,8 +497,8 @@
 
   .no-concentration {
     display: grid;
-    grid-template-columns: minmax(236px, 1fr) minmax(472px, 1fr); 
-  }  
+    grid-template-columns: minmax(236px, 1fr) minmax(472px, 1fr);
+  }
 
   .footer::before {
     top: 1.8%;
@@ -514,8 +513,8 @@
   .article-title {
     margin-block-end: calc(20 / 18 * 1em);
   }
- 
-  }
+
+}
 
 @media (width >= 1024px) {
   .page {
@@ -554,7 +553,7 @@
   }
 
   .header__head-description {
-    margin-block-start: -2.6%;   
+    margin-block-start: -2.6%;
   }
 
   .section:nth-child(4) {
@@ -562,11 +561,11 @@
   }
 
   .no-concentration {
-   grid-template-columns: minmax(314px, 1fr) minmax(648px, 1fr);
+    grid-template-columns: minmax(314px, 1fr) minmax(648px, 1fr);
   }
 
   .no-concentration__title {
-   word-spacing: initial;
+    word-spacing: initial;
   }
 
   .little-concentration {
@@ -584,12 +583,12 @@
   }
 
   .can-in-pictures {
-    grid-template-columns: repeat(auto-fit, minmax(315px, 1fr)) /*minmax(229px, 1fr)*/;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
   }
 
   .can-in-pictures__subtitle {
     grid-column: span 4;
-  }  
+  }
 
   .img-tape {
     grid-row: 3 / 5;
@@ -601,7 +600,10 @@
 
   .footer {
     --font-size-accent: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    font-size: var(--font-size-accent, clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem));
+    font-size: var(
+      --font-size-accent,
+      clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
+    );
   }
 
   .footer::before {
@@ -614,4 +616,4 @@
     right: 97.5%;
   }
 
-  }
+}
