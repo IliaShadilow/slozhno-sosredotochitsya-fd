@@ -28,5 +28,5 @@
   --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения */
   --border-bottom-theme-menu-item: #ff0070;
   --for-focus: #ff0070;
-  --text-shadow-focus: #f1b2ce;
+  --text-shadow-focus: #f1b2ce;/* TODO: посмотри может дело в этом */
 }

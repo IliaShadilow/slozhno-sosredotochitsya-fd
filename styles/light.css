@@ -21,6 +21,8 @@
   --border-color-menu-button-rgba: 53, 52, 48, 0.4;
   --border-bottom-text-shadow: #353430;
   --text-shadow-focus: #353430;
+  --text-color-head-description: #353430; /* Добавить */
+  --border-bottom-theme-menu-item: #353430; /* Добавить */
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,5 +40,7 @@
     --border-color-menu-button-rgba: 53, 52, 48, 0.4;
     --border-bottom-text-shadow: #353430;
     --text-shadow-focus: #353430;
+    --text-color-head-description: #353430; /* Добавить */
+    --border-bottom-theme-menu-item: #353430; /* Добавить */
   }
 }

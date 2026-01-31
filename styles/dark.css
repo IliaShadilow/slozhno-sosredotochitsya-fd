@@ -10,16 +10,17 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-cover-image: url("../images/cover-image-dark.png");
-  --bg-cover-color: #000;
-  --for-focus: #FF0070;
+  --bg-cover-color: #000028; /* Исправлено с #000 на #000028 */
   --rec-display: flex;
   --accent-color: #FF0070;
   --color-text: #FF0070;
   --color-no-focus: #DB00FF;
   --bg-head-description: #FF0070;
+  --text-color-head-description: #000028; /* Добавлено */
   --color-article-p: #F1B2CE;
   --for-focus: #FF0070;
-  --border-color-menu-button-rgba: 255, 0, 112, 0.4; /* RGBA-значения для прозрачности */
+  --border-color-menu-button-rgba: 255, 0, 112, 0.4;
+  --border-bottom-theme-menu-item: #FF0070; /* Добавлено */
   --border-bottom-text-shadow: #F1B2CE;
   --text-shadow-focus: #F1B2CE;
 }
