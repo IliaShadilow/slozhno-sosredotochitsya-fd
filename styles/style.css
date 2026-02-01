@@ -28,7 +28,6 @@ html.theme-light {
   background-attachment: fixed; /* чтобы зафиксировать фон на месте при прокрутке */
   inline-size: clamp(375px, 100%, 768px);
   block-size: 100%;
-  inline-size: 100%;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -40,7 +39,7 @@ html.theme-light {
   grid-auto-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr);
   margin-block-end: calc(50 / 18 * 1em);
   padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);
-  block-size: 100vh;
+  /* block-size: 100vh; */
   min-block-size: 668px;
 }
 
