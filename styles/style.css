@@ -5,18 +5,20 @@
 html.theme-dark,
 html.theme-auto,
 html.theme-light {
-  inline-size: 100%;
-  max-inline-size: 100%;
-  padding-inline: 0;
-  padding-block: 0;
   margin-inline: 0;
   margin-block: 0;
+  padding-inline: 0;
+  padding-block: 0;
+  inline-size: 100%;
+  max-inline-size: 100%;
 }
 
 .page {
   display: grid;
   grid-template-columns: 1fr;
   margin-inline: auto;
+
+  overflow-x: hidden; /* Запретить горизонтальный скролл */
   color: var(--color-text, #ff0070);
   font-family: var(--main-font, "IBM Plex mono"), Arial, sans-serif;
   font-size: var(--font-size, 18px);
@@ -25,12 +27,8 @@ html.theme-light {
   background-color: var(--bg-cover-color, #000028);
   background-attachment: fixed; /* чтобы зафиксировать фон на месте при прокрутке */
   inline-size: clamp(375px, 100%, 768px);
-  /* min-inline-size: 375px;
-  max-inline-size: 768px; */
   block-size: 100%;
   inline-size: 100%;
-
-  overflow-x: hidden; /* Запретить горизонтальный скролл */
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -41,13 +39,17 @@ html.theme-light {
   display: grid;
   grid-auto-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr);
   margin-block-end: calc(50 / 18 * 1em);
+  padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);
   block-size: 100vh;
   min-block-size: 668px;
-  padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);
 }
 
 .content-section {
-  padding-inline: clamp(10px, 2.55vi + 0.46px, 20px); /* внутренний отступ по бокам */
+  padding-inline: clamp(
+    10px,
+    2.55vi + 0.46px,
+    20px
+  ); /* внутренний отступ по бокам */
 }
 
 .header::before {
@@ -279,9 +281,9 @@ html.theme-light {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-block-end: clamp(11px, 1.272vi + 6.229px, 16px);
   min-block-size: 668px;
   block-size: 100vh;
-  padding-block-end: clamp(11px, 1.272vi + 6.229px, 16px);
 }
 
 .footer::before {
@@ -383,8 +385,8 @@ html.theme-light {
 
   .header {
     margin-block-end: calc(76 / 18 * 1em);
+    padding-block-start: clamp(26px, 1.527vi + 4.275px, 16px);
     min-block-size: 1024px;
-    padding-block-start: clamp(26px, 1.527vi + 4.275px, 16px); 
   }
 
   .header::before {
@@ -404,7 +406,7 @@ html.theme-light {
 
   .header__theme-menu {
     margin-block-start: 12%;
-}
+  }
 
   .header__theme-menu-list {
     gap: 11px;
@@ -628,50 +630,6 @@ html.theme-light {
   .how-concentrate {
     grid-template-columns: minmax(314px, 1fr) minmax(648px, 1fr);
   }
-
-  /* ДЛЯ 1024px: НЕ МЕНЯЕМ РАСПОЛОЖЕНИЕ КАРТИНОК! 
-     Оно должно остаться таким же, как на 768px */
-  /* .img-sunset {
-    grid-column: 1 / 3;
-    grid-row: 2;
-    aspect-ratio: 600 / 240; 
-  }
-
-  .img-ice-cream {
-    grid-column: 3;
-    grid-row: 2 / 4;
-    aspect-ratio: 386 / 573; 
-  }
-
-  .img-tape {
-    grid-column: 1;
-    grid-row: 3 / 5; 
-    aspect-ratio: 386 / 573; 
-  }
-
-  .img-books {
-    grid-column: 2;
-    grid-row: 4; 
-    aspect-ratio: 386 / 383; 
-  }
-
-  .img-street {
-    grid-column: 2 / 4;
-    grid-row: 5; 
-    aspect-ratio: 788 / 383; 
-  } */
-
-  /* .can-in-pictures__subtitle {
-    grid-column: span 4;
-  }
-
-  .img-tape {
-    grid-row: 3 / 5;
-  }
-
-  .img-books {
-    grid-row: 3;
-  } */
 
   .footer {
     --font-size-accent: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
