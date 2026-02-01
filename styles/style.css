@@ -28,6 +28,7 @@ html.theme-light {
   background-attachment: fixed; /* чтобы зафиксировать фон на месте при прокрутке */
   inline-size: clamp(375px, 100%, 768px);
   block-size: 100%;
+  inline-size: 100%;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
@@ -37,9 +38,9 @@ html.theme-light {
   position: relative;
   display: grid;
   grid-auto-rows: minmax(228px, 1fr) min-content minmax(228px, 1fr);
-  margin-block-end: calc(50 / 18 * 1em);
+  margin-block-end: calc(30 / 18 * 1em);
   padding-block-start: clamp(10px, 1.527vi + 4.275px, 16px);
-  /* block-size: 100vh; */
+  block-size: 100vh;
   min-block-size: 668px;
 }
 
@@ -66,7 +67,7 @@ html.theme-light {
 .header::after {
   content: "";
   position: absolute;
-  top: 96.1%;
+  top: 93.1%;
   left: 10px;
   display: block;
   border-bottom: 1px solid var(--accent-color, #ff0070);
@@ -104,7 +105,7 @@ html.theme-light {
   grid-column: 2;
   justify-self: self-end;
   align-self: center;
-  margin-block-start: 19%;
+  margin-block-start: 0;
   max-block-size: 98px;
   inline-size: 70px;
 }
@@ -163,7 +164,7 @@ html.theme-light {
     --font-size-accent,
     clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem)
   );
-  line-height: 0.9;
+  line-height: 0.8;
   text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
 }
 
@@ -194,7 +195,7 @@ html.theme-light {
 
 .section:nth-child(4) {
   /* .page  */
-  margin-block-end: calc(46 / 18 * 1em);
+  margin-block-end: calc(40 / 18 * 1em);
 }
 
 .section:nth-child(5) {
@@ -282,13 +283,13 @@ html.theme-light {
   align-items: center;
   padding-block-end: clamp(11px, 1.272vi + 6.229px, 16px);
   min-block-size: 668px;
-  block-size: 100vh;
+  block-size: 98vh;
 }
 
 .footer::before {
   content: "";
   position: absolute;
-  top: 0.7%;
+  top: 1.5%;
   left: 91.1%;
   display: block;
   border-top: 1px solid var(--accent-color, #ff0070);
@@ -443,7 +444,7 @@ html.theme-light {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Фиксированно 3 колонки */
     grid-template-rows: auto; /* Автоматические строки */
-    margin-block-end: calc(60 / 18 * 1em);
+    margin-block-end: calc(80 / 18 * 1em);
   }
 
   .section:nth-child(5) {
@@ -542,7 +543,7 @@ html.theme-light {
 
   .footer::after {
     top: 95.4%;
-    right: 96.6%;
+    right: 94.3%;
   }
 
   .article-title {
@@ -557,9 +558,9 @@ html.theme-light {
   }
 
   .header {
-    margin-block-end: calc(89 / 18 * 1em);
+    margin-block-end: calc(93 / 18 * 1em);
     min-block-size: 736px;
-    block-size: 88%;
+    block-size: 90%;
   }
 
   .header::before {
@@ -601,7 +602,7 @@ html.theme-light {
 
   .section:nth-child(4) {
     grid-template-columns: repeat(3, 1fr); /* Фиксированно 3 колонки */
-    margin-block-end: calc(67 / 18 * 1em);
+    margin-block-end: calc(74 / 18 * 1em);
   }
 
   .no-concentration {
@@ -639,12 +640,13 @@ html.theme-light {
   }
 
   .footer::before {
-    top: 1.5%;
+    top: 0.5%;
     left: 95.4%;
   }
 
   .footer::after {
-    top: 93%;
+    top: 94%;
     right: 95.5%;
   }
 }
+
