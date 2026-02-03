@@ -6,13 +6,12 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-inline: auto;
-
   overflow-x: hidden; /* Запретить горизонтальный скролл */
   color: var(--color-text, #ff0070);
   font-family: var(--main-font, "IBM Plex mono"), Arial, sans-serif;
   font-size: var(--font-size, 18px);
   background: var(--bg-cover-image, url("../images/cover-image-dark.png"))
-    center / cover no-repeat;
+    center / cover no-repeat; /* cover чтобы изображение растягивалось во весь контейнер и лишнее обрезалось */
   background-color: var(--bg-cover-color, #000028);
   background-attachment: fixed; /* чтобы зафиксировать фон на месте при прокрутке */
   inline-size: clamp(375px, 100%, 768px);
@@ -91,7 +90,8 @@
   margin-inline-start: 17%;
   margin-block-start: 13%;
   border-radius: 50%;
-  box-shadow: 0 0 4px 2px var(--decorative-rec-shadow-color, rgba(255, 0, 112, 0.5));
+  box-shadow: 0 0 4px 2px
+    var(--decorative-rec-shadow-color, rgba(255, 0, 112, 0.5));
   background-color: var(--accent-color, #ff0070);
   inline-size: 9px;
   block-size: 9px;
@@ -129,9 +129,9 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  outline: none;
   border-bottom: 1px solid var(--for-focus, #ff0070); /* так будет фокус более удобнее и читабельней
   для других разработчиков */
+  outline: none;
 }
 
 .header__theme-menu-hover {
@@ -195,19 +195,19 @@
 }
 
 .content-section .how-concentrate {
-  margin-block-end: calc(19 / 18 * 1em); 
-} 
+  margin-block-end: calc(19 / 18 * 1em);
+}
 
 .little-concentration .little-concentration__gadgets {
   margin-block-end: 0;
 }
 
 .no-concentration {
-  margin-block-end: calc(27 / 18 * 1em); 
+  margin-block-end: calc(27 / 18 * 1em);
 }
 
 .how-concentrate .how-concentrate__subtitle-five-just {
-  margin-block-end: calc(20 / 18 * 1em); 
+  margin-block-end: calc(20 / 18 * 1em);
 }
 
 .how-concentrate .article-block {
@@ -224,8 +224,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
-  margin-block-end: calc(40 / 18 * 1em);
   gap: 10px;
+  margin-block-end: calc(40 / 18 * 1em);
 }
 
 .can-in-pictures .title-decor {
@@ -323,9 +323,9 @@
 }
 
 .article-block {
+  margin-block-end: calc(21 / 18 * 1em);
   color: var(--color-article-p, #f1b2ce);
   line-height: 1.3;
-  margin-block-end: calc(21 / 18 * 1em);
 }
 
 .article-title {
@@ -355,7 +355,7 @@
     top: 3.4%;
     left: 94.2%;
   }
-  
+
   .header.decorated-zone::after {
     top: 97.2%;
     left: 2.6%;
@@ -363,7 +363,7 @@
 
   .header .title-decor {
     margin-block-start: 1.6%;
-}
+  }
 
   .header__decorative-rec {
     top: 3.6%;
@@ -407,8 +407,8 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Фиксированно 3 колонки */
     grid-template-rows: auto; /* Автоматические строки */
-    margin-block-end: calc(80 / 18 * 1em);
     gap: 20px;
+    margin-block-end: calc(80 / 18 * 1em);
   }
 
   .no-concentration .article-title {
@@ -435,7 +435,7 @@
 
   .how-concentrate__read .how-concentrate {
     margin-block-end: calc(58 / 18 * 1em);
-}
+  }
 
   .how-concentrate {
     grid-template-columns: minmax(236px, 1fr) minmax(472px, 1fr);
@@ -495,7 +495,7 @@
     top: 0;
     left: 94.1%;
   }
-  
+
   .footer.decorated-zone::after {
     top: 95.4%;
     right: 94.3%;
@@ -515,7 +515,6 @@
       clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem)
     );
   }
-  
 }
 
 @media (width >= 1024px) {
@@ -534,7 +533,7 @@
     top: 2.6%;
     left: 95.5%;
   }
-  
+
   .header.decorated-zone::after {
     top: 96.9%;
     left: 2%;
@@ -595,7 +594,7 @@
 
   .content-section .how-concentrate .how-concentrate__subtitle-five-just {
     margin-block-end: calc(20 / 18 * 1em);
-}
+  }
 
   .can-in-pictures {
     grid-template-columns: repeat(3, 1fr); /* Фиксированно 3 колонки */
@@ -606,7 +605,7 @@
     top: 1%;
     left: 95.5%;
   }
-  
+
   .footer.decorated-zone::after {
     top: 94.4%;
     right: 95.5%;
@@ -614,6 +613,5 @@
 
   .how-concentrate .article-title {
     margin-block-end: calc(10 / 18 * 1em);
-  } 
+  }
 }
-
