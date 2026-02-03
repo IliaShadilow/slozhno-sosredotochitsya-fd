@@ -16,7 +16,8 @@
   --rec-display: flex;
   --main-font: "IBM Plex mono";
   --font-size: 18px;
-  --font-size-accent: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-accent-375: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --font-size-accent-768-1024: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --font-regular: normal;
   --font-bold: bold;
   --color-no-focus: #db00ff;
@@ -29,4 +30,6 @@
   --border-bottom-theme-menu-item: #ff0070;
   --for-focus: #ff0070;
   --text-shadow-focus: #f1b2ce;/* TODO: посмотри может дело в этом */
+  --corners-color: #ff0070;
+  --decorative-rec-shadow-color: rgba(255, 0, 112, 0.5);
 }

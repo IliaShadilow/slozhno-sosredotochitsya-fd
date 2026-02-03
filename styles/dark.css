@@ -23,6 +23,7 @@
   --border-bottom-theme-menu-item: #FF0070; /* Добавлено */
   --border-bottom-text-shadow: #F1B2CE;
   --text-shadow-focus: #F1B2CE;
+  --corners-color: #ff0070;
 }
 
 /* TODO: понять что тут писать */

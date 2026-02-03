@@ -10,7 +10,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bg-cover-image: url("../images/cover-image-light.png");
-  --bg-cover-color: #fff;
+  --bg-cover-color: #FFC0CB;
   --rec-display: none;
   --color-text: #353430;
   --accent-color: #ff8dcb;
@@ -23,6 +23,7 @@
   --text-shadow-focus: #353430;
   --text-color-head-description: #353430; /* Добавить */
   --border-bottom-theme-menu-item: #353430; /* Добавить */
+  --corners-color: #353430;
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,5 +43,6 @@
     --text-shadow-focus: #353430;
     --text-color-head-description: #353430; /* Добавить */
     --border-bottom-theme-menu-item: #353430; /* Добавить */
+    --corners-color: #353430;
   }
 }
