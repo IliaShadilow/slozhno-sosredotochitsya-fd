@@ -592,7 +592,7 @@
     grid-template-columns: minmax(314px, 1fr) minmax(648px, 1fr);
   }
 
-  .content-section .how-concentrate .how-concentrate__subtitle-five-just {
+  .content-section .how-concentrate .how-concentrate__subtitle-five-just { /* не используйте вложенность элементов больше двух: так код тяжело читается, и увеличивается вес селекторов без необходимости */
     margin-block-end: calc(20 / 18 * 1em);
   }
 
